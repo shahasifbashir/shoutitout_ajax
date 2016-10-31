@@ -1,0 +1,9 @@
+#set directory listning off
+Options -Indexes
+
+
+#Prevent direct access to files
+<FilesMatch "\.(tpl|sql|ini|log)">
+	Order deny,allow
+	Deny from all
+</FilesMatch>
